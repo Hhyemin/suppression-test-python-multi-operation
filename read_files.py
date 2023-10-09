@@ -1,18 +1,15 @@
+import os
+
+
 def open_file(filename):
-    try:
-        with open(filename, 'r') as file:
-            contents = file.read()
-    except FileNotFoundError:
-        # pylint: disable=W0702
-        contents = "File not found!"
+    with open(filename, 'r') as file:
+        contents = file.read()
     return contents
 
 if __name__ == "__main__":
     filename = "src/test/test_file.txt"
-    file_contents = open_file(filename)
+    if os.path.exists(filename):
+        file_contents = open_file(filename)
     
-    if file_contents == "File not found!":
-        print(f"Suppressed exception: {file_contents}")
-    else:
         print("File contents:")
         print(file_contents)
