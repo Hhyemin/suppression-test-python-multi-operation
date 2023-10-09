@@ -7,7 +7,7 @@ def open_file(filename):
     return contents
 
 if __name__ == "__main__":
-    filename = "non_existent_file.txt"
+    filename = "src/test/test_file.txt"
     file_contents = open_file(filename)
     
     if file_contents == "File not found!":
