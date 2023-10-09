@@ -23,17 +23,20 @@ The focus here is on
 
 #### File concatenate_strings.py
 * **Suppression #1**: # pylint: disable=W1401
-  * Introduced in commit e4ddb66e (**file add**), side-a branch
+  * Real introduced in commit e4ddb66e (**file add**), side-a branch
+  * Expected introduced in commit bc3b393c, main branch
   * Removed in commit 1b99baab, main branch
 
 * **Suppression #2**: # pylint: disable=W1402
-  * Introduced in commit ac8f336a, side-a branch
+  * Real introduced in commit ac8f336a, side-a branch
+  * Expected introduced in commit bc3b393c, main branch
   * Removed in commit b429c023 (**file delete**), main branch
 
 #### File read_files.py
 * **Suppression #3**: # pylint: disable=W0702
   * Introduced in commit 7b631b93, main branch
-  * Removed in commit 5df1ecbf, side-b branch
+  * Real removed in commit 5df1ecbf, side-b branch
+  * Expected removed in commit 5a60b482, main branch
 
 * **Suppression #4**: # pylint: disable=unused-variable
   * Introduced in commit 3e859470, main branch
