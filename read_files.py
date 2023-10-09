@@ -7,6 +7,7 @@ def open_file(filename):
     return contents
 
 if __name__ == "__main__":
+    # pylint: disable=unused-variable 
     filename = "src/test/test_file.txt"
     if os.path.exists(filename):
         file_contents = open_file(filename)
