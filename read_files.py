@@ -3,6 +3,7 @@ def open_file(filename):
         with open(filename, 'r') as file:
             contents = file.read()
     except FileNotFoundError:
+        # pylint: disable=W0702
         contents = "File not found!"
     return contents
 
