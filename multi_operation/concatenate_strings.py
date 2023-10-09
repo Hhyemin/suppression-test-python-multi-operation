@@ -1,5 +1,5 @@
 def concatenate_strings(str1, str2):
-    result = str1 + str2  # pylint: disable=W1401,W1402
+    result = str1 + str2  # pylint: disable=W1402
     print(result)
 
 if __name__ == "__main__":
